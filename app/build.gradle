@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    compileSdk 32
+    compileSdk 16
 
     defaultConfig {
         applicationId "kiran.example.vetcare"
