@@ -25,15 +25,12 @@ public class LoginActivity extends AppCompatActivity {
         _cirLoginButton=findViewById(R.id.cirLoginButton);
         _txtEmail=findViewById(R.id.txtEmail);
         _txtPassword=findViewById(R.id.txtPassword);
-        _cirLoginButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String email=_txtEmail.getText().toString();
-                String pass_word=_txtPassword.getText().toString();
-                String type="login";
-                BackgroundTask backgroundTask=new BackgroundTask(getApplicationContext());
-                backgroundTask.execute(type, email, pass_word);
-            }
+        _cirLoginButton.setOnClickListener(v -> {
+            String email=_txtEmail.getText().toString();
+            String pass_word=_txtPassword.getText().toString();
+            String type="login";
+            BackgroundTask backgroundTask=new BackgroundTask(getApplicationContext());
+            backgroundTask.execute(type, email, pass_word);
         });
     }
 
