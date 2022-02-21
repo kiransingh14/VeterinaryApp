@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".AnimalVaccination">
+    <TextView
+        android:id="@+id/title_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="12dp"
+        android:baselineAligned="false"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:text="VET CARE"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="155dp">
+
+                <TextView
+                    style="@style/viewParent.headerText.NoMode"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="18dp"
+                    android:text="IS YOUR PET \nFACING  \n FLEAS AND TICK \n PROBLEM? "
+                    android:textColor="@color/login_bk_color" />
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="148dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="3dp"
+                    android:src="@drawable/fleas_flies_and_ticks" />
+            </RelativeLayout>
+            <androidx.cardview.widget.CardView
+                android:layout_width="362dp"
+                android:layout_height="1500dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/login_bk_color"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="345dp"
+                    android:layout_height="1500dp"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/darkTextColor"
+                        android:text="1.Prevention is best managed with one of the many veterinary-approved flea and tick products available on the market.
+\nSpeak to your veterinarian to find the best, most appropriate flea and tick prevention product for your dog.
+\nThere are flea and tick topical treatments, collars, and shampoos; each made to address specific needs. And in extreme conditions, you can try one of these sun and bug blocker overalls, which provide protection from biting insects and harmful UV rays.
+\n\n2.Read the label. \n\nNever, ever apply flea medication made for cats to dogs unless the label says it is made for cats and dogs.
+\n\n3.Regularly inspect your dogs (even if they are taking a tick preventative) and yourself for ticks after walks through the woods or grassy settings.
+ \nOn dogs, look especially on the feet (and between toes), under the legs, on lips, around eyes and ears (and inside ears), near the anus, and under the tail.
+  Be sure to look under your dog’s collar, too. Feel for bumps all over your dog, and part the fur to check out any bumps you do feel.
+\n\n4.The quicker you remove a tick, the less likely your dog will contract a secondary illness related to tick bites.
+\n\\nLearn the proper method of tick removal. Invest in a pair of fine tweezers or a tick removal tool used for this purpose.
+It’s best to wear gloves and remove the tick by the head. If you are unable to remove the tick, call your veterinarian.
+\n\n5.Keep grass in your yard mowed as short as possible.
+ Refrain from walking into grassy patches in endemic tick areas if you can.
+The Centers for Disease Control and Prevention also suggests removing leaf litter, tall grasses, and brush from your yard.
+\n\n6.For fleas, look for them on areas of your dog where the coat is sparse or thin. Think belly, inner sides of the hind limbs, and armpits.
+ Fleas are tiny and copper-colored, and they move quickly on your dog’s skin.
+  You may also be able to see “flea dirt” or feces, tiny dark spots that turn red from digested blood when put on a wet paper towel.
+\n\n7.If you own multiple dogs, treat them all at the same time.
+This will help prevent cross infestation. Keeping your dog away from other dogs during flea season can also reduce the risk of getting fleas.
+\n\n8.While dogs are being treated, the surrounding environment must be treated at the same time.
+Wash all bedding in soap and hot water and heat dry or get rid of it, and completely vacuum the sofas and carpets.
+\n\n9.When you’re done, make sure to empty the vacuum containers outside.
+\n\n 10.If flea infestation is extensive in your home, a “fogger” can be used.\n
+ When you use a flea and tick fogger, the room must be evacuated of all pets and people for 12-to-24 hours (read label directions carefully to determine safety, or ask your veterinarian). Be sure to choose a fogger that kills adult fleas and flea larvae.
+\nIf infestation is bad enough, or in parts of the country where fleas are on the ground, professional exterminators may be needed. Here’s hoping it doesn’t come to that!
+
+
+                    ">              </TextView>
+
+                    <TextView
+                        android:id="@+id/activity_Ticksolution_link"
+                        android:layout_width="wrap_content"
+                        android:layout_height="109dp"
+                        android:text="@string/activity_link8"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+    <View
+        android:layout_width="11dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_side_bg" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="11dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="onHomeClick"
+        android:src="@drawable/ic_add_img" />
+
+</RelativeLayout>
