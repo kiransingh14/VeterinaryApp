@@ -1,5 +1,13 @@
 <resources>
     <string name="app_name">ModernLogin</string>
-    <string name="login_email_hint">Email</string>
-    <string name="login_password_hint">Password</string>
+    <string name="pet">Pet Details Form</string>
+    <string name="type">Pet Type:</string>
+    <string name="name">Name:</string>
+    <string name="breeds">Breed:</string>
+    <string name="gender">Gender:</string>
+    <string name="dob">Date of Birth:</string>
+    <string name="symptoms">Symptoms:</string>
+    <string name="submit">SUBMIT</string>
+    <string name="success_label">Form Submitted Successfully</string>
+    <string name="error_label">Please don\'t leave any fields Empty</string>
 </resources>

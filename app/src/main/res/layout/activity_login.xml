@@ -48,9 +48,10 @@
                 android:layout_marginTop="@dimen/loginViewsMargin">
 
                 <EditText
-                    android:id="@+id/editTextEmail"
+                    android:id="@+id/txtEmail"
                     style="@style/modifiedEditText"
-                    android:hint="@string/login_email_hint"
+                    android:layout_height="51dp"
+                    android:hint="E-mail"
                     android:inputType="textEmailAddress"
                     android:maxLines="1" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -61,15 +62,18 @@
                 android:layout_marginTop="@dimen/loginViewsMargin">
 
                 <EditText
-                    android:id="@+id/editTextPassword"
+                    android:id="@+id/txtPassword"
                     style="@style/modifiedEditText"
-                    android:hint="@string/login_password_hint"
+                    android:layout_height="50dp"
+                    android:hint="Password"
                     android:inputType="textPassword"
                     android:maxLines="1" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
                 style="@style/viewParent"
+                android:layout_width="137dp"
+                android:layout_height="27dp"
                 android:layout_gravity="end"
                 android:layout_marginTop="10dp"
                 android:text="Forgot Password?"

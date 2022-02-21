@@ -60,7 +60,7 @@
                         android:layout_marginTop="@dimen/loginViewsMargin">
 
                         <EditText
-                            android:id="@+id/editTextName"
+                            android:id="@+id/txtName"
                             style="@style/modifiedEditText"
                             android:hint="Name"
                             android:inputType="textPersonName"
@@ -73,9 +73,9 @@
                         android:layout_marginTop="@dimen/loginViewsMargin">
 
                         <EditText
-                            android:id="@+id/editTextEmail"
+                            android:id="@+id/txtEmail"
                             style="@style/modifiedEditText"
-                            android:hint="@string/login_email_hint"
+                            android:hint="Email"
                             android:inputType="textEmailAddress"
                             android:maxLines="1" />
                     </com.google.android.material.textfield.TextInputLayout>
@@ -86,7 +86,7 @@
                         android:layout_marginTop="@dimen/loginViewsMargin">
 
                         <EditText
-                            android:id="@+id/editTextMobile"
+                            android:id="@+id/txtMobile"
                             style="@style/modifiedEditText"
                             android:hint="Mobile Number"
                             android:inputType="phone"
@@ -99,9 +99,9 @@
                         android:layout_marginTop="@dimen/loginViewsMargin">
 
                         <EditText
-                            android:id="@+id/editTextPassword"
+                            android:id="@+id/txtPassword"
                             style="@style/modifiedEditText"
-                            android:hint="@string/login_password_hint"
+                            android:hint="Password"
                             android:inputType="textPassword"
                             android:maxLines="1" />
                     </com.google.android.material.textfield.TextInputLayout>
