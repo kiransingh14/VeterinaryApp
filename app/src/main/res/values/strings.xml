@@ -1,5 +1,26 @@
 <resources>
-    <string name="app_name">ModernLogin</string>
+    <string name="app_name">RegisterActivity</string>
     <string name="login_email_hint">Email</string>
     <string name="login_password_hint">Password</string>
+    <string name="app_name2">AnimalVaccination</string>
+    <string name="hyperlink">Learn more about Animal Vaccination at\n <a href="https://www.noah.co.uk/briefingdocument/vaccination-animal-health-overview/">noah.uk</a> </string>
+    <string name="activity_link"><u>Know more about animal vaccination</u></string>
+    <string name="app_name3">HeatstrokesSolution</string>
+    <string name="hyperlink3">Learn more about HeatStrokes at\n <a href="https://www.memphisveterinaryspecialists.com/site/blog-cordova/2019/11/25/dog-heat-stroke-symptoms-treatment-prevention#:~:text=The%20most%20telling%20symptom%20of,%2C%20uncoordinated%20movement%2C%20and%20collapse.">noah.uk</a> </string>
+    <string name="activity_link3"><u>Know more about HeatStrokes Solution and Prevention</u></string>
+    <string name="app_name4">InjuriesSolution</string>
+    <string name="hyperlink4">Learn more about  InjuriesSolution at\n <a href="https://www.msdvetmanual.com/emergency-medicine-and-critical-care/wound-management/management-of-specific-wounds-in-animals">msdvetmanual.com</a> </string>
+    <string name="activity_link4"><u>Know more about InjuriesSolution </u></string>
+    <string name="app_name5">SheddingSolution</string>
+    <string name="hyperlink5">Learn more about SheddingSolution at\n <a href="https://strongsvilleanimalhosp.com/veterinary-topics/newsletter-library/all-about-shedding-is-my-pet-shedding-too-much/">strongsvilleanimalhosp.com</a> </string>
+    <string name="activity_link5"><u>Know more about SheddingSolution and Prevention</u></string>
+    <string name="app_name6">SkinProblem</string>
+    <string name="hyperlink6">Learn more about SkinProblem at\n <a href="https://www.animaltrust.org.uk/blog/dog-skin-allergies/"></a>animaltrust.org </string>
+    <string name="activity_link6"><u>Know more about SkinProblem Solution and Prevention</u></string>
+    <string name="app_name7">TherapyActivity</string>
+    <string name="hyperlink7">Learn more about TherapyActivity at\n <a href="https://www.healthline.com/health/pet-therapy#outlook">healthline.com</a> </string>
+    <string name="activity_link7"><u>Know more about Therapy</u></string>
+    <string name="app_name8">TickSolutions</string>
+    <string name="hyperlink8">Learn more about TickSolutions at\n <a href="https://www.akc.org/expert-advice/health/flea-and-tick-prevention-tips/">noah.uk</a>www.akc.org </string>
+    <string name="activity_link8"><u>Know more about TickSolutions and Prevention</u></string>
 </resources>

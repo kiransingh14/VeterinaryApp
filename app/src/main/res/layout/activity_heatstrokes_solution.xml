@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".AnimalVaccination">
+    <TextView
+        android:id="@+id/title_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="12dp"
+        android:baselineAligned="false"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:text="VET CARE"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="155dp">
+
+                <TextView
+                    style="@style/viewParent.headerText.NoMode"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="18dp"
+                    android:text="\n HEATSTROKES "
+                    android:textColor="@color/login_bk_color" />
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="148dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="3dp"
+                    android:src="@drawable/dog_heat" />
+            </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="362dp"
+            android:layout_height="1500dp"
+            android:layout_marginTop="10dp"
+            app:cardBackgroundColor="@color/login_bk_color"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="345dp"
+                android:layout_height="1500dp"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/darkTextColor"
+                    android:text="What causes heat stroke in dogs? \n\n
+Any hot environment can cause heat stroke in dogs. The most common cause is careless action by a pet owner, like leaving a dog in a car or forgetting to provide water and shade when they are outdoors.
+
+Some dogs are more prone to heat stroke than others. Dogs with thick fur, short noses or those suffering from medical conditions are predisposed to heatstroke. Even dogs who enjoy constant exercise and playtime should be closely monitored for symptoms of heat stroke, especially on hot and humid days.
+\n \n
+What are the symptoms of dog heat stroke?\n \n
+The most telling symptom of heat stroke in dogs is excessive panting. Other symptoms may include signs of discomfort such as drooling, reddened gums, vomiting, diarrhea, mental dullness or loss of consciousness, uncoordinated movement, and collapse.
+
+Heat stroke in dogs can indicate a serious medical problem and cause unseen problems, such as swelling of the brain, kidney failure, intestinal bleeding and abnormal clotting of blood. For this reason, immediate veterinary care is highly recommended.
+\n \n
+What should I do if I think my dog has heat stroke? \n \n
+Call your veterinarian or the nearest emergency animal hospital and tell them you are on your way. On the way to the veterinarian, travel with the windows open and the air conditioner on.
+
+Until you can get to the veterinarian, be sure to:
+
+Remove the dog from the hot environment immediately.
+Do not give the dog aspirin to lower its temperature and can lead to other problems.
+Let your dog drink as much cool water as they want without forcing them to drink.
+Cool your dog off with cold water by placing a soaked towel on their back.
+\n \n How will the veterinarian treat my dog's heat stroke? \n\n
+With cases of heatstroke in dogs, treatment will include intravenous fluid therapy to replace fluids and minerals.
+
+Your veterinarian will also monitor your dog for secondary complications such as kidney failure, development of neurologic symptoms, abnormal clotting, changes in blood pressure and electrolytes abnormalities.
+\n \n
+How can I prevent my dog from developing heat stroke? \n \n
+As a pet owner, it is important to be aware of the outside temperature and take appropriate measures to prevent heat stroke, especially during hot and humid conditions.
+
+When outdoors, always make sure your dog is in a well-ventilated area with access to plenty of water and shade.
+
+While traveling in cars, make sure that your dog is kept in crates that has good ventilation, and never leave your dog in a car with the windows closed."></TextView>
+
+                <TextView
+                    android:id="@+id/activity_heatstrokes_link"
+                    android:layout_width="wrap_content"
+                    android:layout_height="109dp"
+                    android:text="@string/activity_link3"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+    <View
+        android:layout_width="11dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_side_bg" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="11dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="onHomeClick"
+        android:src="@drawable/ic_add_img" />
+</RelativeLayout>

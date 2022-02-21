@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".AnimalVaccination">
+    <TextView
+        android:id="@+id/title_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="12dp"
+        android:baselineAligned="false"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:text="VET CARE"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="155dp">
+
+                <TextView
+                    style="@style/viewParent.headerText.NoMode"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="18dp"
+                    android:text="\n IS YOUR \n PET INJURED? "
+                    android:textColor="@color/login_bk_color" />
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="148dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="3dp"
+                    android:src="@drawable/catinjured" />
+            </RelativeLayout>
+            <androidx.cardview.widget.CardView
+                android:layout_width="362dp"
+                android:layout_height="1500dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/login_bk_color"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="345dp"
+                    android:layout_height="1500dp"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/darkTextColor"
+                        android:text="LACERATIONS \n\n
+                        Uncomplicated simple lacerations are usually managed by complete closure if they are not grossly contaminated. The wound should be thoroughly lavaged and debrided as necessary before closure. If tension is present on the wound edges, it should be relieved by tension-relieving suture techniques, sliding tissue flaps, or grafts. Deep lacerations may be treated according to the same principles, depending on the extent of the injury. Damage to underlying structures (eg, muscles, tendons, and blood vessels) must be resolved before closure. If a laceration is grossly contaminated with debris, primary closure of the wound may not be indicated. Contaminated wounds may be closed with drains or treated as an open wound.
+                        \n\nBITE WOUNDS
+                        \n\n
+                        Bite wounds are a major cause of injuries, especially in free-ranging animals. Cat bites tend to be small, penetrating wounds that frequently become infected and must be treated as an abscess with culture, debridement, antibiotics, and wound drainage. Dog bites have a more varied presentation. Because of the slashing nature of dog bite injuries, the major tissue damage is usually found beneath the surface of the wound. Although only small puncture marks or bruising may be evident on the surface, ribs may be broken or internal organs seriously damaged.
+                        \n\nDEGLOVING INJURIES
+                        \n\nDegloving injuries result in loss of skin and a variable amount of deeper tissue. These injuries are a result of a shear force on the skin. Sources include fan belt injuries and loss of tissue during an accident with a motor vehicle. With a physiologic degloving injury, the skin is still present but completely freed from the underlying fascia. If the injury results in a loss of blood supply to the affected skin area, necrosis may develop over the next several days. Degloving injuries frequently require marked and repeated debridement. Differentiating viable and nonviable tissue may be a problem in the early wound debridement process. An attempt should be made to salvage tissue in which viability is questionable. Subsequent debridement can be used to remove any necrotic tissue.
+                        \n\nPRESSURE WOUNDS
+                        \n\n
+                        Pressure wounds or decubital ulcers develop as a result of pressure-induced necrosis. Pressure wounds can be extremely difficult to treat and are best prevented. Preventive measures include changing the position of the animal frequently, maintaining adequate nutrition and cleanliness, and providing a sufficiently padded bed. Factors that predispose to pressure wounds include paraplegia, tetraplegia, improper coaptation, and immobility. Mild ulcers may be managed with debridement and bandaging to prevent further trauma to the affected site. More severe wounds require extensive surgical management. After debridement and development of a granulation bed, an advancement flap or pedicle graft may be required for closure.
+                        \n\n
+
+
+                    ">              </TextView>
+
+                    <TextView
+                        android:id="@+id/activity_injury_link"
+                        android:layout_width="wrap_content"
+                        android:layout_height="109dp"
+                        android:text="@string/activity_link4"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+    <View
+        android:layout_width="11dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_side_bg" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="11dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="onHomeClick"
+        android:src="@drawable/ic_add_img" />
+
+</RelativeLayout>

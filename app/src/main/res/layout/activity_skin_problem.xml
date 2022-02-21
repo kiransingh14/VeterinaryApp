@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".AnimalVaccination">
+    <TextView
+        android:id="@+id/title_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="12dp"
+        android:baselineAligned="false"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:text="VET CARE"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="155dp">
+
+                <TextView
+                    style="@style/viewParent.headerText.NoMode"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="18dp"
+                    android:text="\nIS YOUR PET \nFACING ANY \n SKIN PROIBLEM? "
+                    android:textColor="@color/login_bk_color" />
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="148dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="3dp"
+                    android:src="@drawable/dog_skin" />
+            </RelativeLayout>
+            <androidx.cardview.widget.CardView
+                android:layout_width="362dp"
+                android:layout_height="2000dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/login_bk_color"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="345dp"
+                    android:layout_height="2200dp"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/darkTextColor"
+                        android:text="  Symptoms of Dog Skin Conditions
+\n\n
+*Skin Sores
+\n*Skin sores or skin lesions
+\n*Dry skin/flaky skin/scaly skin
+\n*Rashes
+\n*Lumps
+\n*Redness
+\n*Dandruff
+\n*Bumps
+\n*Intense itching
+\n*Excessive licking
+\n*Excessive scratching
+\n*Hair loss/bald patches
+\n*Hot spots of inflamed skin (also known as acute moist dermatitis)
+\n\n
+How to spot a pet with a skin condition
+\n\n
+*Information on your dog’s diet – including any recent changes to food or snacks
+\n*The times you notice symptoms – for example, does your dog tend to scratch more in the morning after a walk, or in the evening when they’re in their basket?
+\n*The types of symptoms you’ve noticed – this could include things like a dull coat, hot spots of itching, flaky skin, hair loss, scratching etc.
+\n*Details of any underlying illness – although this won’t apply to healthy dogs, if your dog has been diagnosed with a previous condition, it’s a good idea to bring that up with the vet right from the beginning of your consultation
+\n\nTopical Treatment\n\n*Helps clean the skin, removing scaling and crusts that contain bacteria
+\n*Makes the dog look, feel, and smell better
+\n*Frequently helps compress the course of antibiotics, reducing the time for selection of resistant strains.">              </TextView>
+
+                    <TextView
+                        android:id="@+id/activity_Skinproblem_link"
+                        android:layout_width="wrap_content"
+                        android:layout_height="109dp"
+                        android:text="@string/activity_link6"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+    <View
+        android:layout_width="11dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_side_bg" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="11dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="onHomeClick"
+        android:src="@drawable/ic_add_img" />
+
+</RelativeLayout>

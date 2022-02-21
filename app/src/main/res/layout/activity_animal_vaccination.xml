@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".AnimalVaccination">
+    <TextView
+        android:id="@+id/title_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="12dp"
+        android:baselineAligned="false"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:text="VET CARE"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="155dp">
+
+                <TextView
+                    style="@style/viewParent.headerText.NoMode"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="18dp"
+                    android:text="ANIMAL\n VACCINATION "
+                    android:textColor="@color/whiteTextColor" />
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="148dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="3dp"
+                    android:src="@drawable/animal_vaccine" />
+            </RelativeLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="362dp"
+                android:layout_height="1000dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/login_bk_color"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="345dp"
+                    android:layout_height="1000dp"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/darkTextColor"
+                    android:text="#MODIFIED-LIVE (attenuated):\n\n A vaccine that contains an intact \n but weakened pathogen which stimulates an immune response but does not cause clinical disease.\n
+\n\n#INACTIVATED (killed): \n\n
+A vaccine that contains a completely inactivated pathogen, which is no longer infectious. These vaccines often contain an adjuvant, which is a compound added to help improve the protective immune response.\n
+\n\n#RECOMBINANT:\n \n A vaccine that is produced using genetic engineering technology and using specific genetic material from a pathogen to produce proteins which will stimulate an immune response when the animal is vaccinated.
+\n\n #TOXOID: \n\n A vaccine that is based on inactivated toxins produced by pathogens. These vaccines stimulate immunity and protect the animal against these toxins.\n\n"></TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/activity_link"
+                        android:text="@string/activity_link"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="11dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_side_bg" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="11dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="onHomeClick"
+        android:src="@drawable/ic_add_img" />
+
+</RelativeLayout>

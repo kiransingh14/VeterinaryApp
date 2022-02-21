@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".AnimalVaccination">
+    <TextView
+        android:id="@+id/title_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="12dp"
+        android:baselineAligned="false"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:text="VET CARE"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="155dp">
+
+                <TextView
+                    style="@style/viewParent.headerText.NoMode"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="18dp"
+                    android:text="\n \nTHERAPY "
+                    android:textColor="@color/login_bk_color" />
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="148dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="3dp"
+                    android:src="@drawable/therapy" />
+            </RelativeLayout>
+            <androidx.cardview.widget.CardView
+                android:layout_width="362dp"
+                android:layout_height="1500dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/login_bk_color"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="345dp"
+                    android:layout_height="1500dp"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/darkTextColor"
+                        android:text="What to know about animal therapy? \n\n
+                        Pet therapy is a guided interaction between a person and a trained animal. It also involves the animal’s handler. The purpose of pet therapy is to help someone recover from or cope with a health problem or mental disorder.
+
+Dogs and cats are most commonly used in pet therapy. However, fish, guinea pigs, horses, and other animals that meet screening criteria can also be used. The type of animal chosen depends on the therapeutic goals of a person’s treatment plan.
+\n\nWhat are the benefits of pet therapy?
+\n\nThe goals of a pet therapy program can include:
+
+\nimproving motor skills and joint movement
+\nimproving assisted or independent movement
+\nincreasing self-esteem
+\nincreasing verbal communication
+\ndeveloping social skills
+\nincreasing willingness to join in activities
+\nimproving interactions with others
+\nmotivating willingness to exercise
+\n\nOther benefits of pet therapy include:
+\n\n
+making you happier, lessening depression, and improving your outlook on life
+decreasing loneliness and isolation by giving you a companion
+reducing boredom
+reducing anxiety because of its calming effects
+helping children learn empathic and nurturing skills
+improving the relationship between you and your healthcare provider
+           \n\n         ">              </TextView>
+
+                    <TextView
+                        android:id="@+id/activity_Therapy_link"
+                        android:layout_width="wrap_content"
+                        android:layout_height="109dp"
+                        android:text="@string/activity_link7"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+    <View
+        android:layout_width="11dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_side_bg" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="11dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="onHomeClick"
+        android:src="@drawable/ic_add_img" />
+
+</RelativeLayout>
